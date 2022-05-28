@@ -2,5 +2,5 @@ project: code-terror/walrus
 target: raw
 
 cmds:
-  - cmd: ./raw
+  - cmd: ./walrus/fuzz/target/x86_64-unknown-linux-gnu/release/raw
     libfuzzer: true

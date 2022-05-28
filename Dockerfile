@@ -13,7 +13,7 @@ RUN ${HOME}/.cargo/bin/cargo fuzz build
 WORKDIR /
 
 # Package Stage
-FROM ubuntu:20.04
+#FROM ubuntu:20.04
 
-COPY --from=builder /walrus/fuzz/target/x86_64-unknown-linux-gnu/release/* /
+#COPY --from=builder /walrus/fuzz/target/x86_64-unknown-linux-gnu/release/* /
 COPY /Mayhem/ /Mayhem/

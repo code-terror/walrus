@@ -2,5 +2,5 @@ project: code-terror/walrus
 target: watgen
 
 cmds:
-  - cmd: ./watgen
+  - cmd: ./walrus/fuzz/target/x86_64-unknown-linux-gnu/release/watgen
     libfuzzer: true
