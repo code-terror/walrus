@@ -1,0 +1,6 @@
+project: code-terror/walrus
+target: wasm-opt-ttf
+
+cmds:
+  - cmd: ./wasm-opt-ttf
+    libfuzzer: true

@@ -1,0 +1,6 @@
+project: code-terror/walrus
+target: raw
+
+cmds:
+  - cmd: ./raw
+    libfuzzer: true

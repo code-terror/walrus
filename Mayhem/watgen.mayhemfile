@@ -1,0 +1,6 @@
+project: code-terror/walrus
+target: watgen
+
+cmds:
+  - cmd: ./watgen
+    libfuzzer: true
