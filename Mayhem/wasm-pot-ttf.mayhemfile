@@ -2,5 +2,5 @@ project: code-terror/walrus
 target: wasm-opt-ttf
 
 cmds:
-  - cmd: ./walrus/fuzz/target/x86_64-unknown-linux-gnu/release/wasm-opt-ttf
+  - cmd: /walrus/fuzz/target/x86_64-unknown-linux-gnu/release/wasm-opt-ttf
     libfuzzer: true
