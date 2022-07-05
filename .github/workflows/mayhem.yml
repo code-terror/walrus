@@ -57,21 +57,21 @@ jobs:
         uses: ForAllSecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.raw_mayhemfile}} --duration 300
+          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.raw_mayhemfile}} --duration 90
           sarif-output: sarif
 
       - name: Start analysis for watgen
         uses: ForAllSecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.watgen_mayhemfile}} --duration 300
+          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.watgen_mayhemfile}} --duration 90
           sarif-output: sarif     
       
       - name: Start analysis for wasm
         uses: ForAllSecure/mcode-action@v1
         with:
           mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
-          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.wasm_mayhemfile}} --duration 300
+          args: --image ${{ steps.meta.outputs.tags }} --file ${{ env.wasm_mayhemfile}} --duration 90
           sarif-output: sarif   
       
       - name: Upload SARIF file(s)
